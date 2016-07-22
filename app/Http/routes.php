@@ -12,7 +12,9 @@
 */
 
 Route::get('/', function () {
-    return 'Fuck you';
+    return 'Ahihi';
 });
 
-Route::
+Route::get('about', function() {
+   return view('pages.about');
+});
