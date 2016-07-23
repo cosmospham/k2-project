@@ -36,10 +36,14 @@
         </style>
     </head>
     <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
-            </div>
-        </div>
+        @unless (empty($people))
+            There are some people
+        @else
+            You are gay
+        @endunless
+
+        @foreach($people as $person)
+            <li>{{ $person }}</li>
+        @endforeach
     </body>
 </html>

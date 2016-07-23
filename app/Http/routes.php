@@ -12,7 +12,11 @@
 */
 
 Route::get('/', function () {
-    return 'Ahihi';
+    $people = ['Pham', 'Quoc', 'Buu'];
+    return view('welcome', ['people' => $people]);
+//    return view('welcome', compact('people'));
+//    return view('welcome')
+//        ->with('people', $people);
 });
 
 Route::get('about', function() {
