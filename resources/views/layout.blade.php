@@ -4,7 +4,7 @@
     <title>Laravel</title>
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
+    <link rel="stylesheet" href="{{ elixir('css/app.css') }}" />
     <style>
         html, body {
             height: 100%;
@@ -36,6 +36,11 @@
     </style>
 </head>
 <body>
+<div>
+    @section('abc')
+        <h1>ABC</h1>
+    @show
+</div>
 <div class="container">
     <div class="content">
         @yield('content')

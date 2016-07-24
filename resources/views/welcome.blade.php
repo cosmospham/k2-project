@@ -1,4 +1,4 @@
-@extends('layout')
+{{--@extends('layout')--}}
 
 @section('content')
 
@@ -15,3 +15,8 @@
     </ol>
 
 @stop
+
+@section('abc')
+    {{--@parent--}}
+    <h1>DEF</h1>
+@show
