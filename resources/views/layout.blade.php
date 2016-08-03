@@ -36,11 +36,7 @@
     </style>
 </head>
 <body>
-<div>
-    @section('abc')
-        <h1>ABC</h1>
-    @show
-</div>
+
 <div class="container">
     <div class="content">
         @yield('content')
